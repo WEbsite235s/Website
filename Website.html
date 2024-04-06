@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Roblox Lua Cheat Execution</title>
+    <script>
+        function executeCode() {
+            var luaCode = document.getElementById("luaCode").value;
+            try {
+                eval(luaCode);
+            } catch (error) {
+                console.error('Error:', error);
+                alert("Error executing Lua code.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Roblox Lua Cheat Execution</h1>
+    <textarea id="luaCode" rows="10" cols="50" placeholder="Enter your Lua code here..."></textarea>
+    <br>
+    <button onclick="executeCode()">Execute</button>
+</body>
+</html>
